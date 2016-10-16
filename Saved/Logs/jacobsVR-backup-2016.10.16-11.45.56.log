@@ -1,0 +1,975 @@
+﻿Log file open, 10/16/16 07:54:09
+LogInit:Display: Running engine for game: jacobsVR
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-454345492) SRandInit(-454345491).
+LogTaskGraph: Started task graph with 4 named threads and 5 total threads.
+LogStats: Stats thread started at 0.073081
+LogInit: Version: 4.11.1-2934540+++UE4+Release-4.11
+LogInit: API Version: 2927265
+LogInit: Compiled (64-bit): Apr  6 2016 02:14:16
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.11
+LogInit: Command line: 
+LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.11/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.10.16-05.54.09:555][  0]LogInit: Selected Device Profile: [Windows]
+[2016.10.16-05.54.09:555][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.10.16-05.54.09:567][  0]LogInit: Computer: DELL-PC
+[2016.10.16-05.54.09:567][  0]LogInit: User: Dell
+[2016.10.16-05.54.09:567][  0]LogInit: CPU Page size=65536, Cores=2
+[2016.10.16-05.54.09:567][  0]LogInit: High frequency timer resolution =2.338341 MHz
+[2016.10.16-05.54.09:568][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2016.10.16-05.54.09:568][  0]LogMemory: Platform Memory Stats for Windows
+[2016.10.16-05.54.09:568][  0]LogMemory: Process Physical Memory: 312.53 MB used, 312.53 MB peak
+[2016.10.16-05.54.09:568][  0]LogMemory: Process Virtual Memory: 315.54 MB used, 315.54 MB peak
+[2016.10.16-05.54.09:568][  0]LogMemory: Physical Memory: 5455.62 MB used, 8072.96 MB total
+[2016.10.16-05.54.09:568][  0]LogMemory: Virtual Memory: 652.10 MB used, 134217728.00 MB total
+[2016.10.16-05.54.09:593][  0]LogTextLocalizationManager: No specific translations for ('es-MX') exist, so ('es') translations will be used.
+[2016.10.16-05.54.09:907][  0]LogD3D11RHI: D3D11 adapters:
+[2016.10.16-05.54.09:917][  0]LogD3D11RHI:    0. 'Intel(R) HD Graphics Family' (Feature Level 11_0)
+[2016.10.16-05.54.09:917][  0]LogD3D11RHI:       112MB of dedicated video memory, 0MB of dedicated system memory, and 2048MB of shared system memory, 1 output[s]
+[2016.10.16-05.54.09:919][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.10.16-05.54.09:919][  0]LogD3D11RHI:       0MB of dedicated video memory, 0MB of dedicated system memory, and 4036MB of shared system memory, 0 output[s]
+[2016.10.16-05.54.09:919][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.10.16-05.54.09:928][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.10.16-05.54.09:928][  0]LogD3D11RHI:     Adapter Name: Intel(R) HD Graphics Family
+[2016.10.16-05.54.09:928][  0]LogD3D11RHI:   Driver Version: 20.19.15.4463 (internal 20.19.15.4463)
+[2016.10.16-05.54.09:928][  0]LogD3D11RHI:      Driver Date: 5-25-2016
+[2016.10.16-05.54.09:928][  0]LogRHI: Texture pool is 795 MB (70% of 1136 MB)
+[2016.10.16-05.54.09:936][  0]LogD3D11RHI: Async texture creation enabled
+[2016.10.16-05.54.09:942][  0]LogShaderCompilers: Guid format shader working directory is -18 characters bigger than the processId version (../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/Intermediate/Shaders/WorkingDirectory/5200/).
+[2016.10.16-05.54.09:942][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Dell/AppData/Local/Temp/UnrealShaderWorkingDir/91D9A34247BF2B1BB38302AF78D32CA7/'.
+[2016.10.16-05.54.09:942][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.10.16-05.54.11:273][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.10.16-05.54.11:279][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.10.16-05.54.11:286][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.10.16-05.54.11:293][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.10.16-05.54.11:299][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.10.16-05.54.11:303][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.10.16-05.54.11:308][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.10.16-05.54.11:312][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.10.16-05.54.11:316][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.10.16-05.54.11:321][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.10.16-05.54.11:325][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.10.16-05.54.11:334][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.10.16-05.54.11:334][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.10.16-05.54.11:335][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.10.16-05.54.11:356][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.10.16-05.54.11:360][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.10.16-05.54.11:364][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.10.16-05.54.11:368][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.10.16-05.54.11:372][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.10.16-05.54.11:372][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.10.16-05.54.11:481][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.10.16-05.54.11:538][  0]LogDerivedDataCache: Loaded boot cache 0.06s 46MB C:/Users/Dell/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.10.16-05.54.11:538][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Dell/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+[2016.10.16-05.54.11:538][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.10.16-05.54.11:538][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.10.16-05.54.11:538][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.10.16-05.54.11:538][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.10.16-05.54.11:557][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.10.16-05.54.11:570][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Dell/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.10.16-05.54.11:760][  0]LogInit: Selected Device Profile: [Windows]
+[2016.10.16-05.54.11:760][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.10.16-05.54.11:812][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.10.16-05.54.11:961][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.10.16-05.54.11:961][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.10.16-05.54.11:961][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.10.16-05.54.12:303][  0]LogUObjectArray: 27678 objects as part of root set at end of initial load.
+[2016.10.16-05.54.12:303][  0]LogUObjectAllocator: 5591384 out of 0 bytes used by permanent object pool.
+[2016.10.16-05.54.12:303][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.10.16-05.54.12:314][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.10.16-05.54.12:472][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.10.16-05.54.12:472][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.10.16-05.54.12:575][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.10.16-05.54.12:575][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.10.16-05.54.12:575][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.10.16-05.54.12:575][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.10.16-05.54.12:575][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.10.16-05.54.12:575][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.10.16-05.54.13:264][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.10.16-05.54.13:375][  0]LogAssetRegistry: FAssetRegistry took 0.0224 seconds to start up
+[2016.10.16-05.54.13:616][  0]SourceControl: Información El control de código fuente está desactivado
+[2016.10.16-05.54.13:616][  0]SourceControl: Información El control de código fuente está desactivado
+[2016.10.16-05.54.13:626][  0]SourceControl: Información El control de código fuente está desactivado
+[2016.10.16-05.54.13:636][  0]SourceControl: Información El control de código fuente está desactivado
+[2016.10.16-05.54.13:882][  0]LogEngine: Initializing Engine...
+[2016.10.16-05.54.13:884][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.10.16-05.54.13:884][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.10.16-05.54.14:048][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.10.16-05.54.14:053][  0]LogInit: XAudio2 using 'Altavoces / Auriculares (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.16-05.54.14:334][  0]LogInit: FAudioDevice initialized.
+[2016.10.16-05.54.14:364][  0]LogDerivedDataCache: Saved boot cache 0.03s 46MB C:/Users/Dell/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.10.16-05.54.14:369][  0]LogInit: Texture streaming: Enabled
+[2016.10.16-05.54.14:404][  0]LogInit: Transaction tracking system initialized
+[2016.10.16-05.54.14:440][  0]BlueprintLog: New page: Cargar el editor
+[2016.10.16-05.54.14:588][  0]LocalizationService: Información Localization service is disabled
+[2016.10.16-05.54.15:341][  0]LogConsoleResponse:Display: 
+[2016.10.16-05.54.15:574][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Dell/Documents/Unreal Projects/jacobsVR/Content/' took 0.03s
+[2016.10.16-05.54.15:574][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.10.16-05.54.15:574][  0]LogCook:Display: Mobile HDR setting 0
+[2016.10.16-05.54.15:574][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.10.16-05.54.15:637][  0]SourceControl: Información El control de código fuente está desactivado
+[2016.10.16-05.54.15:637][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.10.16-05.54.15:638][  0]LightingResults: New page: Diseñar la iluminación
+[2016.10.16-05.54.15:642][  0]MapCheck: New page: Revisión del mapa
+[2016.10.16-05.54.15:642][  0]LightingResults: New page: Diseñar la iluminación
+[2016.10.16-05.54.18:029][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.10.16-05.54.18:045][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.10.16-05.54.18:209][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.10.16-05.54.18:256][  0]MapCheck: Información Map check complete: 0 Error(s), 0 Warning(s), took 46.994ms to complete.
+[2016.10.16-05.54.18:256][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 2.619
+[2016.10.16-05.54.18:857][  0]LogCollectionManager: Loaded 0 collections in 0.003101 seconds
+[2016.10.16-05.54.18:956][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Dell/Documents/Unreal Projects/jacobsVR/Saved/Collections/' took 0.01s
+[2016.10.16-05.54.18:956][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Dell/Documents/Unreal Projects/jacobsVR/Content/Developers/Dell/Collections/' took 0.01s
+[2016.10.16-05.54.18:956][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Dell/Documents/Unreal Projects/jacobsVR/Content/Collections/' took 0.01s
+[2016.10.16-05.54.18:956][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
+[2016.10.16-05.54.18:965][  0]LogContentBrowser: Native class hierarchy populated in 0.0088 seconds. Added 1979 classes and 343 folders.
+[2016.10.16-05.54.19:052][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.10.16-05.54.19:052][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.10.16-05.54.19:053][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0006 seconds. Added 12 classes and 0 folders.
+[2016.10.16-05.54.19:061][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2016.10.16-05.54.19:642][  0]LogContentBrowser: Native class hierarchy updated for 'SuperSearch' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2016.10.16-05.54.21:379][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2016.10.16-05.54.21:456][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2016.10.16-05.54.22:101][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.10.16-05.54.22:126][  0]LogUObjectGlobals:Warning: Error al encontrar el objeto 'Class Ninguno.'
+[2016.10.16-05.54.22:199][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2016.10.16-05.54.22:200][  0]LogLoad: Full Startup: 13.91 seconds (BP compile: 0.37 seconds)
+[2016.10.16-05.54.22:200][  0]LogExternalProfiler:Warning: No registered external profiler was matched with a command-line switch (or the DLL could not be loaded).  External profiling features will not be available.
+[2016.10.16-05.54.22:218][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.10.16-05.54.22:330][  0]LogContentStreaming: Texture pool size now 200 MB
+[2016.10.16-05.54.22:652][  0]LogRenderer: Reallocating scene render targets to support 856x372 (Frame:2).
+[2016.10.16-05.54.23:592][  2]LogAssetRegistry: Asset discovery search completed in 10.2400 seconds
+[2016.10.16-05.54.23:592][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.10.16-05.54.23:592][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000027 seconds (updated 0 objects)
+[2016.10.16-05.54.52:039][496]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-05.54.52:039][496]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.16-05.54.52:117][496]PIE: New page: Sesión PIE (reproducción en el editor): FirstPersonExampleMap (16/10/2016 08:54:52)
+[2016.10.16-05.54.52:117][496]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2016.10.16-05.54.52:170][496]LogPlayLevel: PIE: StaticDuplicateObject took: (0.052853s)
+[2016.10.16-05.54.52:171][496]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.10.16-05.54.52:171][496]LogPlayLevel: PIE: World Init took: (0.001421s)
+[2016.10.16-05.54.52:172][496]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.054765s)
+[2016.10.16-05.54.52:172][496]LogActorComponent: UnregisterComponent: (/Engine/Transient.ProjectileMovementComponent_40__A6522401) Not registered. Aborting.
+[2016.10.16-05.54.52:172][496]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.10.16-05.54.52:214][496]LogInit: XAudio2 using 'Altavoces / Auriculares (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.16-05.54.52:232][496]LogInit: FAudioDevice initialized.
+[2016.10.16-05.54.52:293][496]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2016.10.16-05.54.52:304][496]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 60) at 2016.10.16-07.54.52
+[2016.10.16-05.54.52:305][496]LogWorld: Bringing up level for play took: 0.010329
+[2016.10.16-05.54.52:306][496]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.16-05.54.52:312][496]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 9 classes and 0 folders.
+[2016.10.16-05.54.52:313][496]PIE: Información Tiempo de inicio de la reproducción en el editor para  /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap -0.45
+[2016.10.16-05.54.52:313][496]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-05.56.44:746][226]Cmd: SELECT NONE
+[2016.10.16-05.56.47:099][366]Cmd: SELECT NONE
+[2016.10.16-05.56.47:917][415]Cmd: SELECT NONE
+[2016.10.16-05.56.48:117][427]Cmd: SELECT NONE
+[2016.10.16-05.56.51:176][610]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-05.56.51:214][610]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-05.56.58:286][  2]LogEditorViewport: Clicking on Actor (LMB): TextRenderActor (TextRenderActor13)
+[2016.10.16-05.57.07:307][435]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
+[2016.10.16-05.58.28:870][379]MapCheck: New page: Revisión del mapa
+[2016.10.16-05.58.29:128][379]LightingResults: New page: Diseño de la iluminación - 16/10/2016 08:58:29
+[2016.10.16-05.58.29:924][379]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2016.10.16-05.58.30:312][379]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2016.10.16-05.58.30:687][379]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2016.10.16-05.58.34:229][379]LogSwarmInterface:Error: [TryOpenConnection] Waiting for the agent to start up ...
+[2016.10.16-05.58.34:757][379]LogSwarmInterface:Error: System.Net.Sockets.SocketException (0x80004005): No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 127.0.0.1:8008
+
+Server stack trace: 
+   en System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   en System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   en System.Runtime.Remoting.Channels.RemoteConnection.CreateNewSocket(EndPoint ipEndPoint)
+   en System.Runtime.Remoting.Channels.SocketCache.GetSocket(String machinePortAndSid, Boolean openNew)
+   en System.Runtime.Remoting.Channels.Tcp.TcpClientTransportSink.SendRequestWithRetry(IMessage msg, ITransportHeaders requestHeaders, Stream requestStream)
+   en System.Runtime.Remoting.Channels.Tcp.TcpClientTransportSink.AsyncProcessRequest(IClientChannelSinkStack sinkStack, IMessage msg, ITransportHeaders headers, Stream stream)
+   en System.Runtime.Remoting.Channels.BinaryClientFormatterSink.AsyncProcessMessage(IMessage msg, IMessageSink replySink)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en NSwarm.IAgentInterfaceWrapper.MethodDelegate.EndInvoke(Hashtable& OutParameters, IAsyncResult result)
+   en NSwarm.FSwarmInterface.TryOpenConnection(FConnectionCallback CallbackFunc, IntPtr CallbackData, ELogFlags LoggingFlags) en i:\Perforce2\UE4-Orion\Engine\Source\Editor\SwarmInterface\DotNET\SwarmInterface.cs:línea 2811
+[2016.10.16-05.58.40:822][379]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2016.10.16-05.58.40:822][379]LogSwarmInterface: [TryOpenConnection] Local Process ID is 5200
+[2016.10.16-05.58.50:443][379]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2016.10.16-05.58.50:443][379]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2016.10.16-05.58.50:443][379]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2016.10.16-05.58.50:443][379]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2016.10.16-05.58.50:443][379]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2016.10.16-05.58.51:598][379]LogEditorBuildUtils: Build time 0:00:22
+[2016.10.16-05.58.51:617][379]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer MaterialInstanceDynamic_4, compiling. 
+[2016.10.16-05.58.51:639][379]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer MaterialInstanceDynamic_4, compiling. 
+[2016.10.16-05.58.51:792][380]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer BasicShapeMaterial, compiling. 
+[2016.10.16-05.58.51:806][380]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer BasicShapeMaterial, compiling. 
+[2016.10.16-05.58.51:862][381]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer WorldGridMaterial, compiling. Is special engine material.
+[2016.10.16-05.58.51:912][381]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer WorldGridMaterial, compiling. Is special engine material.
+[2016.10.16-05.58.55:059][389]LogActorComponent: UnregisterComponent: (/Engine/Transient.ProjectileMovementComponent_40__A6522401) Not registered. Aborting.
+[2016.10.16-05.58.55:059][389]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.10.16-05.59.02:858][615]Job is a success!
+[2016.10.16-05.59.03:610][616]LogTexture:Display: Generando texturas: SkyOcclusion0_1 (AutoDXT)
+[2016.10.16-05.59.03:610][616]LogTexture:Display: Generando texturas: HQ_Lightmap0_1 (AutoDXT)
+[2016.10.16-05.59.03:610][616]LogTexture:Display: Generando texturas: LQ_Lightmap_0_1 (DXT1)
+[2016.10.16-05.59.03:610][616]LogTexture:Display: Generando texturas: SkyOcclusion0_2 (AutoDXT)
+[2016.10.16-05.59.03:610][616]LogTexture:Display: Generando texturas: HQ_Lightmap0_2 (AutoDXT)
+[2016.10.16-05.59.03:610][616]LogTexture:Display: Generando texturas: LQ_Lightmap_0_2 (DXT1)
+[2016.10.16-05.59.03:610][616]LogTexture:Display: Generando texturas: ShadowMapTexture2D_0 (G8)
+[2016.10.16-05.59.03:610][616]LogTexture:Display: Generando texturas: ShadowMapTexture2D_1 (G8)
+[2016.10.16-05.59.03:937][616]Lightmass on DELL-PC: 4.51 sec total, 887 ms importing, 178 ms setup, 517 ms photons, 2.24 sec processing, 0 ms extra exporting [7/7 mappings]. Threads: 8.91 sec total, 3.53 sec processing.
+[2016.10.16-05.59.04:048][616]LogStaticLightingSystem: Illumination: 34.6 sec (81 ms encoding lightmaps, 57 ms encoding shadowmaps)
+[2016.10.16-05.59.04:048][616]LogStaticLightingSystem: Lightmap texture memory:  0.2 MB (0.2 MB streaming, 0.0 MB non-streaming), 4 textures
+[2016.10.16-05.59.04:048][616]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 2 textures
+[2016.10.16-05.59.04:294][617]Cmd: MAP CHECK NOTIFYRESULTS
+[2016.10.16-05.59.04:294][617]MapCheck: New page: FirstPersonExampleMap - 16/10/2016 08:59:04
+[2016.10.16-05.59.04:326][617]MapCheck:Error: Error BigWall2_22 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-05.59.04:326][617]MapCheck:Warning: Aviso BigWall2_22 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:326][617]MapCheck:Warning: Aviso BigWall2_22 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Error: Error BigWall_21 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso BigWall_21 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso BigWall_21 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube10_4 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube10_4 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube11_5 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube11_5 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube12_6 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube12_6 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube13_7 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube13_7 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube14_8 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube14_8 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube15_9 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube15_9 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube16_10 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube16_10 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube17_11 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube17_11 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube18_12 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube18_12 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube19_13 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube19_13 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube20_14 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube20_14 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube21_15 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube21_15 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube8_2 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube8_2 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube9_3 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso EditorCube9_3 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Error: Error Floor_16 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso Floor_16 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:327][617]MapCheck:Warning: Aviso Floor_16 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:328][617]MapCheck:Error: Error Wall1_17 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-05.59.04:328][617]MapCheck:Warning: Aviso Wall1_17 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:328][617]MapCheck:Warning: Aviso Wall1_17 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:328][617]MapCheck:Error: Error Wall2_18 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-05.59.04:328][617]MapCheck:Warning: Aviso Wall2_18 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:328][617]MapCheck:Warning: Aviso Wall2_18 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:328][617]MapCheck:Error: Error Wall3_19 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-05.59.04:328][617]MapCheck:Warning: Aviso Wall3_19 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:328][617]MapCheck:Warning: Aviso Wall3_19 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:328][617]MapCheck:Error: Error Wall4_20 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-05.59.04:328][617]MapCheck:Warning: Aviso Wall4_20 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:328][617]MapCheck:Warning: Aviso Wall4_20 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-05.59.04:410][617]MapCheck: Información Map check complete: 7 Error(s), 42 Warning(s), took 117.025ms to complete.
+[2016.10.16-05.59.53:137][858]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube2)
+[2016.10.16-05.59.54:773][935]LogEditorViewport: Clicking on Actor (LMB): TextRenderActor (TextRenderActor21)
+[2016.10.16-06.00.09:930][606]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube5)
+[2016.10.16-06.00.18:928][ 27]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.00.18:928][ 27]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.16-06.00.18:928][ 27]PIE: New page: Sesión PIE (reproducción en el editor): FirstPersonExampleMap (16/10/2016 09:00:18)
+[2016.10.16-06.00.18:928][ 27]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2016.10.16-06.00.18:990][ 27]LogPlayLevel: PIE: StaticDuplicateObject took: (0.061070s)
+[2016.10.16-06.00.18:991][ 27]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.10.16-06.00.18:991][ 27]LogPlayLevel: PIE: World Init took: (0.001312s)
+[2016.10.16-06.00.18:992][ 27]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.062768s)
+[2016.10.16-06.00.18:992][ 27]LogActorComponent: UnregisterComponent: (/Engine/Transient.ProjectileMovementComponent_40__A6522401) Not registered. Aborting.
+[2016.10.16-06.00.18:992][ 27]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.10.16-06.00.19:022][ 27]LogInit: XAudio2 using 'Altavoces / Auriculares (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.16-06.00.19:041][ 27]LogInit: FAudioDevice initialized.
+[2016.10.16-06.00.19:076][ 27]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2016.10.16-06.00.19:092][ 27]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 60) at 2016.10.16-08.00.19
+[2016.10.16-06.00.19:093][ 27]LogWorld: Bringing up level for play took: 0.015642
+[2016.10.16-06.00.19:095][ 27]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.16-06.00.19:096][ 27]PIE: Información Tiempo de inicio de la reproducción en el editor para  /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.333
+[2016.10.16-06.00.19:096][ 27]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.00.51:297][942]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.00.51:352][942]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.00.53:855][ 78]LogEditorViewport: Clicking on Actor (LMB): DirectionalLight (Light Source)
+[2016.10.16-06.02.17:798][861]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.02.17:798][861]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.16-06.02.17:798][861]PIE: New page: Sesión PIE (reproducción en el editor): FirstPersonExampleMap (16/10/2016 09:02:17)
+[2016.10.16-06.02.17:798][861]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2016.10.16-06.02.17:862][861]LogPlayLevel: PIE: StaticDuplicateObject took: (0.063884s)
+[2016.10.16-06.02.17:863][861]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.10.16-06.02.17:864][861]LogPlayLevel: PIE: World Init took: (0.001408s)
+[2016.10.16-06.02.17:864][861]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.065714s)
+[2016.10.16-06.02.17:894][861]LogInit: XAudio2 using 'Altavoces / Auriculares (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.16-06.02.17:911][861]LogInit: FAudioDevice initialized.
+[2016.10.16-06.02.17:940][861]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2016.10.16-06.02.17:947][861]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 60) at 2016.10.16-08.02.17
+[2016.10.16-06.02.17:948][861]LogWorld: Bringing up level for play took: 0.007794
+[2016.10.16-06.02.17:949][861]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.16-06.02.17:949][861]PIE: Información Tiempo de inicio de la reproducción en el editor para  /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap -0.813
+[2016.10.16-06.02.17:950][861]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.02.26:006][337]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.02.26:050][337]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.02.29:277][487]MapCheck: New page: Revisión del mapa
+[2016.10.16-06.02.29:296][487]LightingResults: New page: Diseño de la iluminación - 16/10/2016 09:02:29
+[2016.10.16-06.02.29:321][487]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2016.10.16-06.02.29:374][487]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2016.10.16-06.02.29:374][487]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2016.10.16-06.02.29:375][487]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2016.10.16-06.02.29:376][487]LogSwarmInterface: [TryOpenConnection] Local Process ID is 5200
+[2016.10.16-06.02.33:886][487]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2016.10.16-06.02.33:886][487]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2016.10.16-06.02.33:886][487]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2016.10.16-06.02.33:886][487]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2016.10.16-06.02.33:886][487]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2016.10.16-06.02.34:157][487]LogEditorBuildUtils: Build time 0:00:04
+[2016.10.16-06.02.39:592][720]Job is a success!
+[2016.10.16-06.02.39:885][721]LogTexture:Display: Generando texturas: SkyOcclusion1_1 (AutoDXT)
+[2016.10.16-06.02.39:885][721]LogTexture:Display: Generando texturas: HQ_Lightmap1_1 (AutoDXT)
+[2016.10.16-06.02.39:885][721]LogTexture:Display: Generando texturas: LQ_Lightmap_1_1 (DXT1)
+[2016.10.16-06.02.39:885][721]LogTexture:Display: Generando texturas: SkyOcclusion1_2 (AutoDXT)
+[2016.10.16-06.02.39:885][721]LogTexture:Display: Generando texturas: HQ_Lightmap1_2 (AutoDXT)
+[2016.10.16-06.02.39:885][721]LogTexture:Display: Generando texturas: LQ_Lightmap_1_2 (DXT1)
+[2016.10.16-06.02.39:885][721]LogTexture:Display: Generando texturas: ShadowMapTexture2D_2 (G8)
+[2016.10.16-06.02.39:885][721]LogTexture:Display: Generando texturas: ShadowMapTexture2D_3 (G8)
+[2016.10.16-06.02.39:939][721]Lightmass on DELL-PC: 4.03 sec total, 301 ms importing, 20 ms setup, 2.17 sec photons, 1.50 sec processing, 0 ms extra exporting [7/7 mappings]. Threads: 5.94 sec total, 2.84 sec processing.
+[2016.10.16-06.02.39:946][721]LogStaticLightingSystem: Illumination: 10.6 sec (81 ms encoding lightmaps, 19 ms encoding shadowmaps)
+[2016.10.16-06.02.39:946][721]LogStaticLightingSystem: Lightmap texture memory:  0.2 MB (0.2 MB streaming, 0.0 MB non-streaming), 4 textures
+[2016.10.16-06.02.39:946][721]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 2 textures
+[2016.10.16-06.02.40:907][722]Cmd: MAP CHECK NOTIFYRESULTS
+[2016.10.16-06.02.40:907][722]MapCheck: New page: FirstPersonExampleMap - 16/10/2016 09:02:40
+[2016.10.16-06.02.40:908][722]MapCheck:Error: Error BigWall2_22 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.02.40:908][722]MapCheck:Warning: Aviso BigWall2_22 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:908][722]MapCheck:Warning: Aviso BigWall2_22 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:908][722]MapCheck:Error: Error BigWall_21 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.02.40:908][722]MapCheck:Warning: Aviso BigWall_21 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:908][722]MapCheck:Warning: Aviso BigWall_21 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube10_4 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube10_4 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube11_5 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube11_5 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube12_6 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube12_6 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube13_7 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube13_7 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube14_8 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube14_8 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube15_9 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube15_9 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube16_10 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube16_10 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube17_11 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube17_11 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube18_12 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube18_12 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube19_13 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube19_13 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube20_14 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube20_14 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube21_15 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube21_15 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube8_2 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube8_2 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube9_3 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso EditorCube9_3 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Error: Error Floor_16 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso Floor_16 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso Floor_16 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Error: Error Wall1_17 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso Wall1_17 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso Wall1_17 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:909][722]MapCheck:Error: Error Wall2_18 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.02.40:909][722]MapCheck:Warning: Aviso Wall2_18 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:910][722]MapCheck:Warning: Aviso Wall2_18 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:910][722]MapCheck:Error: Error Wall3_19 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.02.40:910][722]MapCheck:Warning: Aviso Wall3_19 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:910][722]MapCheck:Warning: Aviso Wall3_19 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:910][722]MapCheck:Error: Error Wall4_20 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.02.40:910][722]MapCheck:Warning: Aviso Wall4_20 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:910][722]MapCheck:Warning: Aviso Wall4_20 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.02.40:973][722]MapCheck: Información Map check complete: 7 Error(s), 42 Warning(s), took 66.043ms to complete.
+[2016.10.16-06.03.31:234][990]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube2)
+[2016.10.16-06.03.33:886][103]LogEditorViewport: Clicking on Actor (LMB): FirstPersonCharacter_C (FirstPersonCharacter)
+[2016.10.16-06.03.36:508][191]LogEditorViewport: Clicking on Actor (LMB): FirstPersonCharacter_C (FirstPersonCharacter)
+[2016.10.16-06.04.32:786][571]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Cube3)
+[2016.10.16-06.04.34:510][638]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Cube3)
+[2016.10.16-06.05.44:746][668]MapCheck: New page: Revisión del mapa
+[2016.10.16-06.05.44:766][668]LightingResults: New page: Diseño de la iluminación - 16/10/2016 09:05:44
+[2016.10.16-06.05.44:823][668]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2016.10.16-06.05.44:827][668]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2016.10.16-06.05.44:827][668]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2016.10.16-06.05.44:828][668]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2016.10.16-06.05.44:828][668]LogSwarmInterface: [TryOpenConnection] Local Process ID is 5200
+[2016.10.16-06.05.49:340][668]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2016.10.16-06.05.49:340][668]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2016.10.16-06.05.49:340][668]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2016.10.16-06.05.49:340][668]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2016.10.16-06.05.49:340][668]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2016.10.16-06.05.49:567][668]LogEditorBuildUtils: Build time 0:00:04
+[2016.10.16-06.05.49:581][669]LogActorComponent: UnregisterComponent: (/Engine/Transient.ProjectileMovementComponent_40__A6522401) Not registered. Aborting.
+[2016.10.16-06.05.49:581][669]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.10.16-06.05.54:185][856]Job is a success!
+[2016.10.16-06.05.54:500][857]LogTexture:Display: Generando texturas: SkyOcclusion0_1 (AutoDXT)
+[2016.10.16-06.05.54:500][857]LogTexture:Display: Generando texturas: HQ_Lightmap0_1 (AutoDXT)
+[2016.10.16-06.05.54:500][857]LogTexture:Display: Generando texturas: LQ_Lightmap_0_1 (DXT1)
+[2016.10.16-06.05.54:500][857]LogTexture:Display: Generando texturas: SkyOcclusion0_2 (AutoDXT)
+[2016.10.16-06.05.54:501][857]LogTexture:Display: Generando texturas: HQ_Lightmap0_2 (AutoDXT)
+[2016.10.16-06.05.54:501][857]LogTexture:Display: Generando texturas: LQ_Lightmap_0_2 (DXT1)
+[2016.10.16-06.05.54:501][857]LogTexture:Display: Generando texturas: ShadowMapTexture2D_4 (G8)
+[2016.10.16-06.05.54:501][857]LogTexture:Display: Generando texturas: ShadowMapTexture2D_5 (G8)
+[2016.10.16-06.05.54:554][857]Lightmass on DELL-PC: 3.85 sec total, 257 ms importing, 20 ms setup, 2.15 sec photons, 1.38 sec processing, 0 ms extra exporting [7/7 mappings]. Threads: 5.51 sec total, 2.72 sec processing.
+[2016.10.16-06.05.54:561][857]LogStaticLightingSystem: Illumination: 9.74 sec (89 ms encoding lightmaps, 20 ms encoding shadowmaps)
+[2016.10.16-06.05.54:561][857]LogStaticLightingSystem: Lightmap texture memory:  0.2 MB (0.2 MB streaming, 0.0 MB non-streaming), 4 textures
+[2016.10.16-06.05.54:561][857]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 2 textures
+[2016.10.16-06.05.55:357][858]Cmd: MAP CHECK NOTIFYRESULTS
+[2016.10.16-06.05.55:357][858]MapCheck: New page: FirstPersonExampleMap - 16/10/2016 09:05:55
+[2016.10.16-06.05.55:358][858]MapCheck:Error: Error BigWall2_22 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.05.55:358][858]MapCheck:Warning: Aviso BigWall2_22 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:358][858]MapCheck:Warning: Aviso BigWall2_22 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:358][858]MapCheck:Error: Error BigWall_21 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.05.55:358][858]MapCheck:Warning: Aviso BigWall_21 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:358][858]MapCheck:Warning: Aviso BigWall_21 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:358][858]MapCheck:Warning: Aviso EditorCube10_4 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:358][858]MapCheck:Warning: Aviso EditorCube10_4 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:358][858]MapCheck:Warning: Aviso EditorCube11_5 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:358][858]MapCheck:Warning: Aviso EditorCube11_5 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:358][858]MapCheck:Warning: Aviso EditorCube12_6 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:358][858]MapCheck:Warning: Aviso EditorCube12_6 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:358][858]MapCheck:Warning: Aviso EditorCube13_7 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:358][858]MapCheck:Warning: Aviso EditorCube13_7 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso EditorCube14_8 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso EditorCube14_8 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso EditorCube15_9 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso EditorCube15_9 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso EditorCube16_10 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso EditorCube16_10 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso EditorCube17_11 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso EditorCube17_11 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso EditorCube18_12 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso EditorCube18_12 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso EditorCube19_13 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso EditorCube19_13 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso EditorCube20_14 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso EditorCube20_14 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso EditorCube21_15 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso EditorCube21_15 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso EditorCube8_2 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso EditorCube8_2 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso EditorCube9_3 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso EditorCube9_3 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Error: Error Floor_16 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso Floor_16 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso Floor_16 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Error: Error Wall1_17 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso Wall1_17 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso Wall1_17 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Error: Error Wall2_18 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso Wall2_18 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso Wall2_18 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Error: Error Wall3_19 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso Wall3_19 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso Wall3_19 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Error: Error Wall4_20 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso Wall4_20 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:359][858]MapCheck:Warning: Aviso Wall4_20 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.05.55:419][858]MapCheck: Información Map check complete: 7 Error(s), 42 Warning(s), took 61.961ms to complete.
+[2016.10.16-06.06.01:606][129]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.06.01:606][129]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.16-06.06.01:607][129]PIE: New page: Sesión PIE (reproducción en el editor): FirstPersonExampleMap (16/10/2016 09:06:01)
+[2016.10.16-06.06.01:607][129]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2016.10.16-06.06.01:656][129]LogPlayLevel: PIE: StaticDuplicateObject took: (0.049055s)
+[2016.10.16-06.06.01:657][129]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.10.16-06.06.01:657][129]LogPlayLevel: PIE: World Init took: (0.001376s)
+[2016.10.16-06.06.01:658][129]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.050869s)
+[2016.10.16-06.06.01:689][129]LogInit: XAudio2 using 'Altavoces / Auriculares (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.16-06.06.01:710][129]LogInit: FAudioDevice initialized.
+[2016.10.16-06.06.01:746][129]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2016.10.16-06.06.01:757][129]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 60) at 2016.10.16-08.06.01
+[2016.10.16-06.06.01:757][129]LogWorld: Bringing up level for play took: 0.010766
+[2016.10.16-06.06.01:759][129]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.16-06.06.01:759][129]PIE: Información Tiempo de inicio de la reproducción en el editor para  /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.997
+[2016.10.16-06.06.01:759][129]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.07.09:132][155]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.07.09:176][155]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.07.48:876][659]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.07.48:876][659]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.16-06.07.48:876][659]PIE: New page: Sesión PIE (reproducción en el editor): FirstPersonExampleMap (16/10/2016 09:07:48)
+[2016.10.16-06.07.48:876][659]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2016.10.16-06.07.48:941][659]LogPlayLevel: PIE: StaticDuplicateObject took: (0.065029s)
+[2016.10.16-06.07.48:942][659]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.10.16-06.07.48:942][659]LogPlayLevel: PIE: World Init took: (0.001204s)
+[2016.10.16-06.07.48:943][659]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.066639s)
+[2016.10.16-06.07.48:943][659]LogActorComponent: UnregisterComponent: (/Engine/Transient.ProjectileMovementComponent_40__A6522401) Not registered. Aborting.
+[2016.10.16-06.07.48:943][659]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.10.16-06.07.48:976][659]LogInit: XAudio2 using 'Altavoces / Auriculares (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.16-06.07.48:997][659]LogInit: FAudioDevice initialized.
+[2016.10.16-06.07.49:028][659]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2016.10.16-06.07.49:039][659]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 60) at 2016.10.16-08.07.49
+[2016.10.16-06.07.49:040][659]LogWorld: Bringing up level for play took: 0.010855
+[2016.10.16-06.07.49:041][659]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.16-06.07.49:041][659]PIE: Información Tiempo de inicio de la reproducción en el editor para  /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.279
+[2016.10.16-06.07.49:042][659]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.08.05:318][628]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.08.05:357][628]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.08.12:501][967]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube3)
+[2016.10.16-06.08.36:291][991]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube3)
+[2016.10.16-06.08.38:570][ 91]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube3)
+[2016.10.16-06.08.40:817][191]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube3)
+[2016.10.16-06.08.42:670][272]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube3)
+[2016.10.16-06.09.03:315][146]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube3)
+[2016.10.16-06.09.05:359][234]LogEditorViewport: Clicking on Actor (LMB): TextRenderActor (TextRenderActor2)
+[2016.10.16-06.09.52:538][221]LogEditorViewport: Clicking on Actor (LMB): TextRenderActor (TextRenderActor2)
+[2016.10.16-06.10.32:224][541]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube3)
+[2016.10.16-06.10.34:045][620]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube3)
+[2016.10.16-06.10.35:018][662]LogEditorViewport: Clicking on Actor (LMB): FirstPersonCharacter_C (FirstPersonCharacter)
+[2016.10.16-06.10.35:898][693]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube7)
+[2016.10.16-06.10.36:616][721]LogEditorViewport: Clicking on Actor (LMB): TextRenderActor (TextRenderActor2)
+[2016.10.16-06.10.46:245][108]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube3)
+[2016.10.16-06.10.47:471][160]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube3)
+[2016.10.16-06.15.44:784][892]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.15.44:785][892]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.16-06.15.44:785][892]PIE: New page: Sesión PIE (reproducción en el editor): FirstPersonExampleMap (16/10/2016 09:15:44)
+[2016.10.16-06.15.44:785][892]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2016.10.16-06.15.44:837][892]LogPlayLevel: PIE: StaticDuplicateObject took: (0.051815s)
+[2016.10.16-06.15.44:838][892]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.10.16-06.15.44:839][892]LogPlayLevel: PIE: World Init took: (0.001408s)
+[2016.10.16-06.15.44:839][892]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.053690s)
+[2016.10.16-06.15.44:839][892]LogActorComponent: UnregisterComponent: (/Engine/Transient.ProjectileMovementComponent_40__A6522401) Not registered. Aborting.
+[2016.10.16-06.15.44:839][892]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.10.16-06.15.44:871][892]LogInit: XAudio2 using 'Altavoces / Auriculares (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.16-06.15.44:889][892]LogInit: FAudioDevice initialized.
+[2016.10.16-06.15.44:918][892]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2016.10.16-06.15.44:926][892]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 60) at 2016.10.16-08.15.44
+[2016.10.16-06.15.44:927][892]LogWorld: Bringing up level for play took: 0.007762
+[2016.10.16-06.15.44:928][892]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.16-06.15.44:928][892]PIE: Información Tiempo de inicio de la reproducción en el editor para  /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.166
+[2016.10.16-06.15.44:928][892]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.17.40:350][809]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.17.40:391][809]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.17.48:124][ 66]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0010 seconds. Added 108 classes and 0 folders.
+[2016.10.16-06.18.31:769][204]LogActorComponent: UnregisterComponent: (/Engine/Transient.ProjectileMovementComponent_40__A6522401) Not registered. Aborting.
+[2016.10.16-06.18.31:769][204]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.10.16-06.18.32:170][204]LogSavePackage: Save=315.32ms
+[2016.10.16-06.18.32:170][204]LogSavePackage: Moving '../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/Saved/FirstPersonExampleMap_Auto10035F8D94488C47783570BA608CAE156.tmp' to '../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/Saved/Autosaves/Game/FirstPersonBP/Maps/FirstPersonExampleMap_Auto1.umap'
+[2016.10.16-06.18.32:176][204]LogSavePackage: Total save time: 344.39ms
+[2016.10.16-06.18.32:176][204]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/Saved/Autosaves/Game/FirstPersonBP/Maps/FirstPersonExampleMap_Auto1.umap
+[2016.10.16-06.18.32:179][204]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/FirstPersonExampleMap' took 0.410
+[2016.10.16-06.18.32:179][204]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.410
+[2016.10.16-06.23.05:573][759]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.23.05:573][759]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.10.16-06.23.05:586][759]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.10.16-06.23.05:603][759]LogPlayLevel: [PlayLevel] Compiling FirstPersonCharacter before play...
+[2016.10.16-06.23.05:736][759]LogPlayLevel: PlayLevel: Blueprint regeneration took 163 ms (1 blueprints)
+[2016.10.16-06.23.05:774][759]PIE: New page: Sesión PIE (reproducción en el editor): FirstPersonExampleMap (16/10/2016 09:23:05)
+[2016.10.16-06.23.05:774][759]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2016.10.16-06.23.05:804][759]LogPlayLevel: PIE: StaticDuplicateObject took: (0.029787s)
+[2016.10.16-06.23.05:805][759]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.10.16-06.23.05:805][759]LogPlayLevel: PIE: World Init took: (0.001139s)
+[2016.10.16-06.23.05:806][759]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.031318s)
+[2016.10.16-06.23.05:845][759]LogInit: XAudio2 using 'Altavoces / Auriculares (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.16-06.23.05:861][759]LogInit: FAudioDevice initialized.
+[2016.10.16-06.23.05:896][759]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2016.10.16-06.23.05:904][759]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 60) at 2016.10.16-08.23.05
+[2016.10.16-06.23.05:905][759]LogWorld: Bringing up level for play took: 0.008222
+[2016.10.16-06.23.05:906][759]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.16-06.23.05:906][759]PIE: Información Tiempo de inicio de la reproducción en el editor para  /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 1.144
+[2016.10.16-06.23.05:906][759]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.23.08:479][861]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.23.08:544][861]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.23.08:544][861]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.10.16-06.23.13:131][  9]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.23.13:132][  9]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.16-06.23.13:132][  9]PIE: New page: Sesión PIE (reproducción en el editor): FirstPersonExampleMap (16/10/2016 09:23:13)
+[2016.10.16-06.23.13:132][  9]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2016.10.16-06.23.13:183][  9]LogPlayLevel: PIE: StaticDuplicateObject took: (0.050901s)
+[2016.10.16-06.23.13:184][  9]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.10.16-06.23.13:185][  9]LogPlayLevel: PIE: World Init took: (0.001301s)
+[2016.10.16-06.23.13:185][  9]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.052670s)
+[2016.10.16-06.23.13:249][  9]LogInit: XAudio2 using 'Altavoces / Auriculares (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.16-06.23.13:268][  9]LogInit: FAudioDevice initialized.
+[2016.10.16-06.23.13:303][  9]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2016.10.16-06.23.13:315][  9]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 60) at 2016.10.16-08.23.13
+[2016.10.16-06.23.13:316][  9]LogWorld: Bringing up level for play took: 0.011675
+[2016.10.16-06.23.13:317][  9]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.16-06.23.13:317][  9]PIE: Información Tiempo de inicio de la reproducción en el editor para  /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.554
+[2016.10.16-06.23.13:317][  9]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.24.15:194][713]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.24.15:232][713]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.24.22:769][104]LogEditorViewport: Clicking on Actor (LMB): SkyLight (SkyLight)
+[2016.10.16-06.25.10:074][944]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
+[2016.10.16-06.25.12:897][ 64]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.25.12:897][ 64]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.16-06.25.12:898][ 64]PIE: New page: Sesión PIE (reproducción en el editor): FirstPersonExampleMap (16/10/2016 09:25:12)
+[2016.10.16-06.25.12:898][ 64]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2016.10.16-06.25.12:951][ 64]LogPlayLevel: PIE: StaticDuplicateObject took: (0.052707s)
+[2016.10.16-06.25.12:952][ 64]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.10.16-06.25.12:952][ 64]LogPlayLevel: PIE: World Init took: (0.001501s)
+[2016.10.16-06.25.12:953][ 64]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.054740s)
+[2016.10.16-06.25.12:953][ 64]LogActorComponent: UnregisterComponent: (/Engine/Transient.ProjectileMovementComponent_40__A6522401) Not registered. Aborting.
+[2016.10.16-06.25.12:953][ 64]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.10.16-06.25.13:006][ 64]LogInit: XAudio2 using 'Altavoces / Auriculares (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.16-06.25.13:022][ 64]LogInit: FAudioDevice initialized.
+[2016.10.16-06.25.13:053][ 64]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2016.10.16-06.25.13:061][ 64]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 60) at 2016.10.16-08.25.13
+[2016.10.16-06.25.13:062][ 64]LogWorld: Bringing up level for play took: 0.007960
+[2016.10.16-06.25.13:063][ 64]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.16-06.25.13:063][ 64]PIE: Información Tiempo de inicio de la reproducción en el editor para  /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.3
+[2016.10.16-06.25.13:063][ 64]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.25.30:410][ 98]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.25.30:460][ 98]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.25.40:994][569]LogContentBrowser: Native class hierarchy updated for 'Matinee' in 0.0012 seconds. Added 15 classes and 2 folders.
+[2016.10.16-06.25.41:004][569]LogInit: Transaction tracking system initialized
+[2016.10.16-06.25.41:005][569]EditorErrors: New page: Inicio de matinee
+[2016.10.16-06.26.35:061][ 55]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.26.35:061][ 55]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.16-06.26.35:061][ 55]PIE: New page: Sesión PIE (reproducción en el editor): FirstPersonExampleMap (16/10/2016 09:26:35)
+[2016.10.16-06.26.35:061][ 55]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2016.10.16-06.26.35:112][ 55]LogPlayLevel: PIE: StaticDuplicateObject took: (0.050915s)
+[2016.10.16-06.26.35:114][ 55]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.10.16-06.26.35:114][ 55]LogPlayLevel: PIE: World Init took: (0.001488s)
+[2016.10.16-06.26.35:114][ 55]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.052924s)
+[2016.10.16-06.26.35:165][ 55]LogExit: Transaction tracking system shut down
+[2016.10.16-06.26.35:168][ 55]LogInit: XAudio2 using 'Altavoces / Auriculares (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.16-06.26.35:186][ 55]LogInit: FAudioDevice initialized.
+[2016.10.16-06.26.35:215][ 55]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2016.10.16-06.26.35:223][ 55]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 60) at 2016.10.16-08.26.35
+[2016.10.16-06.26.35:224][ 55]LogWorld: Bringing up level for play took: 0.008636
+[2016.10.16-06.26.35:225][ 55]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.16-06.26.35:225][ 55]PIE: Información Tiempo de inicio de la reproducción en el editor para  /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.463
+[2016.10.16-06.26.35:225][ 55]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.27.02:078][659]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.27.02:120][659]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.27.12:978][191]LogInit: Transaction tracking system initialized
+[2016.10.16-06.27.12:979][191]EditorErrors: New page: Inicio de matinee
+[2016.10.16-06.32.58:736][974]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.32.58:736][974]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.16-06.32.58:736][974]PIE: New page: Sesión PIE (reproducción en el editor): FirstPersonExampleMap (16/10/2016 09:32:58)
+[2016.10.16-06.32.58:736][974]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2016.10.16-06.32.58:770][974]LogPlayLevel: PIE: StaticDuplicateObject took: (0.033935s)
+[2016.10.16-06.32.58:771][974]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.10.16-06.32.58:771][974]LogPlayLevel: PIE: World Init took: (0.001096s)
+[2016.10.16-06.32.58:772][974]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.035383s)
+[2016.10.16-06.32.58:772][974]LogActorComponent: UnregisterComponent: (/Engine/Transient.ProjectileMovementComponent_40__A6522401) Not registered. Aborting.
+[2016.10.16-06.32.58:772][974]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.10.16-06.32.58:811][974]LogExit: Transaction tracking system shut down
+[2016.10.16-06.32.58:813][974]LogInit: XAudio2 using 'Altavoces / Auriculares (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.16-06.32.58:829][974]LogInit: FAudioDevice initialized.
+[2016.10.16-06.32.58:862][974]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2016.10.16-06.32.58:870][974]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 60) at 2016.10.16-08.32.58
+[2016.10.16-06.32.58:870][974]LogWorld: Bringing up level for play took: 0.007327
+[2016.10.16-06.32.58:871][974]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.16-06.32.58:872][974]PIE: Información Tiempo de inicio de la reproducción en el editor para  /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 2.109
+[2016.10.16-06.32.58:872][974]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.33.42:495][584]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.33.42:541][584]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.33.53:045][ 93]LogSavePackage: Save=354.60ms
+[2016.10.16-06.33.53:046][ 93]LogSavePackage: Moving '../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/Saved/FirstPersonExampleMap_Auto23B42AC454AA239D5E10A63859629E28A.tmp' to '../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/Saved/Autosaves/Game/FirstPersonBP/Maps/FirstPersonExampleMap_Auto2.umap'
+[2016.10.16-06.33.53:054][ 93]LogSavePackage: Total save time: 388.54ms
+[2016.10.16-06.33.53:054][ 93]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/Saved/Autosaves/Game/FirstPersonBP/Maps/FirstPersonExampleMap_Auto2.umap
+[2016.10.16-06.33.53:058][ 93]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/FirstPersonExampleMap' took 0.437
+[2016.10.16-06.33.53:058][ 93]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.437
+[2016.10.16-06.33.53:066][ 93]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/FirstPersonBP/Blueprints/FirstPersonCharacter] ([1] browsable assets)...
+[2016.10.16-06.33.53:109][ 93]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/FirstPersonBP/Blueprints/FirstPersonCharacter.FirstPersonCharacter]
+[2016.10.16-06.33.53:109][ 93]OBJ SavePackage: Finished generating thumbnails for package [/Game/FirstPersonBP/Blueprints/FirstPersonCharacter]
+[2016.10.16-06.33.53:276][ 93]LogSavePackage: Save=158.89ms
+[2016.10.16-06.33.53:276][ 93]LogSavePackage: Moving '../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/Saved/FirstPersonCharacter_Auto2B8885CA34EE60FFA9DA6758A560815B6.tmp' to '../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/Saved/Autosaves/Game/FirstPersonBP/Blueprints/FirstPersonCharacter_Auto2.uasset'
+[2016.10.16-06.33.53:293][ 93]LogSavePackage: Total save time: 181.38ms
+[2016.10.16-06.33.53:293][ 93]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/Saved/Autosaves/Game/FirstPersonBP/Blueprints/FirstPersonCharacter_Auto2.uasset
+[2016.10.16-06.33.53:293][ 93]LogFileHelpers: Auto-saving content packages took 0.234
+[2016.10.16-06.34.10:285][817]MapCheck: New page: Revisión del mapa
+[2016.10.16-06.34.10:332][817]Cmd: MAP REBUILD ALLVISIBLE
+[2016.10.16-06.34.10:335][817]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2016.10.16-06.34.10:746][817]LightingResults: New page: Diseño de la iluminación - 16/10/2016 09:34:10
+[2016.10.16-06.34.10:768][817]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2016.10.16-06.34.10:779][817]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2016.10.16-06.34.10:779][817]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2016.10.16-06.34.10:782][817]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2016.10.16-06.34.10:782][817]LogSwarmInterface: [TryOpenConnection] Local Process ID is 5200
+[2016.10.16-06.34.15:294][817]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2016.10.16-06.34.15:294][817]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2016.10.16-06.34.15:294][817]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2016.10.16-06.34.15:294][817]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2016.10.16-06.34.15:294][817]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2016.10.16-06.34.15:560][817]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2016.10.16-06.34.15:561][817]MapCheck: New page: FirstPersonExampleMap - 16/10/2016 09:34:15
+[2016.10.16-06.34.15:561][817]MapCheck:Error: Error BigWall2_22 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.34.15:561][817]MapCheck:Warning: Aviso BigWall2_22 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:561][817]MapCheck:Warning: Aviso BigWall2_22 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:561][817]MapCheck:Error: Error BigWall_21 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.34.15:561][817]MapCheck:Warning: Aviso BigWall_21 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:561][817]MapCheck:Warning: Aviso BigWall_21 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:561][817]MapCheck:Warning: Aviso EditorCube10_4 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:561][817]MapCheck:Warning: Aviso EditorCube10_4 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:561][817]MapCheck:Warning: Aviso EditorCube11_5 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:561][817]MapCheck:Warning: Aviso EditorCube11_5 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:561][817]MapCheck:Warning: Aviso EditorCube12_6 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube12_6 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube13_7 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube13_7 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube14_8 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube14_8 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube15_9 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube15_9 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube16_10 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube16_10 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube17_11 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube17_11 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube18_12 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube18_12 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube19_13 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube19_13 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube20_14 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube20_14 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube21_15 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube21_15 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube8_2 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube8_2 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube9_3 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso EditorCube9_3 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Error: Error Floor_16 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso Floor_16 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso Floor_16 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Error: Error Wall1_17 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso Wall1_17 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Warning: Aviso Wall1_17 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:562][817]MapCheck:Error: Error Wall2_18 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.34.15:563][817]MapCheck:Warning: Aviso Wall2_18 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:563][817]MapCheck:Warning: Aviso Wall2_18 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:563][817]MapCheck:Error: Error Wall3_19 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.34.15:563][817]MapCheck:Warning: Aviso Wall3_19 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:563][817]MapCheck:Warning: Aviso Wall3_19 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:563][817]MapCheck:Error: Error Wall4_20 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.34.15:563][817]MapCheck:Warning: Aviso Wall4_20 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:563][817]MapCheck:Warning: Aviso Wall4_20 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.15:638][817]MapCheck: Información Map check complete: 7 Error(s), 42 Warning(s), took 77.901ms to complete.
+[2016.10.16-06.34.15:661][817]LogEditorBuildUtils: Build time 0:00:05
+[2016.10.16-06.34.15:951][820]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.10.16-06.34.15:952][820]LogActorComponent: UnregisterComponent: (/Engine/Transient.ProjectileMovementComponent_40__A6522401) Not registered. Aborting.
+[2016.10.16-06.34.21:340][994]Job is a success!
+[2016.10.16-06.34.21:567][995]LogTexture:Display: Generando texturas: SkyOcclusion1_1 (AutoDXT)
+[2016.10.16-06.34.21:567][995]LogTexture:Display: Generando texturas: HQ_Lightmap1_1 (AutoDXT)
+[2016.10.16-06.34.21:567][995]LogTexture:Display: Generando texturas: LQ_Lightmap_1_1 (DXT1)
+[2016.10.16-06.34.21:567][995]LogTexture:Display: Generando texturas: SkyOcclusion1_2 (AutoDXT)
+[2016.10.16-06.34.21:567][995]LogTexture:Display: Generando texturas: HQ_Lightmap1_2 (AutoDXT)
+[2016.10.16-06.34.21:567][995]LogTexture:Display: Generando texturas: LQ_Lightmap_1_2 (DXT1)
+[2016.10.16-06.34.21:567][995]LogTexture:Display: Generando texturas: ShadowMapTexture2D_6 (G8)
+[2016.10.16-06.34.21:567][995]LogTexture:Display: Generando texturas: ShadowMapTexture2D_7 (G8)
+[2016.10.16-06.34.21:652][995]Lightmass on DELL-PC: 4.03 sec total, 339 ms importing, 25 ms setup, 2.13 sec photons, 1.43 sec processing, 0 ms extra exporting [7/7 mappings]. Threads: 5.71 sec total, 3.05 sec processing.
+[2016.10.16-06.34.21:660][995]LogStaticLightingSystem: Illumination: 10.8 sec (83 ms encoding lightmaps, 17 ms encoding shadowmaps)
+[2016.10.16-06.34.21:660][995]LogStaticLightingSystem: Lightmap texture memory:  0.2 MB (0.2 MB streaming, 0.0 MB non-streaming), 4 textures
+[2016.10.16-06.34.21:660][995]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 2 textures
+[2016.10.16-06.34.22:317][996]Cmd: MAP CHECK NOTIFYRESULTS
+[2016.10.16-06.34.22:317][996]MapCheck: New page: FirstPersonExampleMap - 16/10/2016 09:34:22
+[2016.10.16-06.34.22:318][996]MapCheck:Error: Error BigWall2_22 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso BigWall2_22 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso BigWall2_22 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Error: Error BigWall_21 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso BigWall_21 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso BigWall_21 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso EditorCube10_4 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso EditorCube10_4 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso EditorCube11_5 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso EditorCube11_5 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso EditorCube12_6 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso EditorCube12_6 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso EditorCube13_7 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso EditorCube13_7 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso EditorCube14_8 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso EditorCube14_8 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso EditorCube15_9 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso EditorCube15_9 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso EditorCube16_10 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso EditorCube16_10 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso EditorCube17_11 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso EditorCube17_11 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso EditorCube18_12 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso EditorCube18_12 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso EditorCube19_13 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso EditorCube19_13 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:318][996]MapCheck:Warning: Aviso EditorCube20_14 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:319][996]MapCheck:Warning: Aviso EditorCube20_14 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:319][996]MapCheck:Warning: Aviso EditorCube21_15 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:319][996]MapCheck:Warning: Aviso EditorCube21_15 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:319][996]MapCheck:Warning: Aviso EditorCube8_2 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:319][996]MapCheck:Warning: Aviso EditorCube8_2 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:319][996]MapCheck:Warning: Aviso EditorCube9_3 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:319][996]MapCheck:Warning: Aviso EditorCube9_3 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:319][996]MapCheck:Error: Error Floor_16 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.34.22:319][996]MapCheck:Warning: Aviso Floor_16 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:319][996]MapCheck:Warning: Aviso Floor_16 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:319][996]MapCheck:Error: Error Wall1_17 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.34.22:319][996]MapCheck:Warning: Aviso Wall1_17 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:319][996]MapCheck:Warning: Aviso Wall1_17 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:319][996]MapCheck:Error: Error Wall2_18 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.34.22:319][996]MapCheck:Warning: Aviso Wall2_18 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:319][996]MapCheck:Warning: Aviso Wall2_18 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:319][996]MapCheck:Error: Error Wall3_19 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.34.22:319][996]MapCheck:Warning: Aviso Wall3_19 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:319][996]MapCheck:Warning: Aviso Wall3_19 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:319][996]MapCheck:Error: Error Wall4_20 ¡El componente es de tipo estático, pero tiene unos ajustes del mapa de iluminación no válidos! La iluminación indirecta será negra. Las causas más comunes se deben a una resolución del mapa de iluminación de 0, LightmapCoordinateIndex fuera de los límites. 
+[2016.10.16-06.34.22:319][996]MapCheck:Warning: Aviso Wall4_20 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:319][996]MapCheck:Warning: Aviso Wall4_20 Static mesh actor has NULL StaticMesh property 
+[2016.10.16-06.34.22:385][996]MapCheck: Información Map check complete: 7 Error(s), 42 Warning(s), took 68.537ms to complete.
+[2016.10.16-06.34.40:951][759]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.34.40:951][759]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.16-06.34.40:951][759]PIE: New page: Sesión PIE (reproducción en el editor): FirstPersonExampleMap (16/10/2016 09:34:40)
+[2016.10.16-06.34.40:951][759]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2016.10.16-06.34.40:997][759]LogPlayLevel: PIE: StaticDuplicateObject took: (0.045379s)
+[2016.10.16-06.34.40:998][759]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.10.16-06.34.40:998][759]LogPlayLevel: PIE: World Init took: (0.001336s)
+[2016.10.16-06.34.40:998][759]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.047140s)
+[2016.10.16-06.34.41:050][759]LogInit: XAudio2 using 'Altavoces / Auriculares (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.16-06.34.41:072][759]LogInit: FAudioDevice initialized.
+[2016.10.16-06.34.41:103][759]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2016.10.16-06.34.41:113][759]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 60) at 2016.10.16-08.34.41
+[2016.10.16-06.34.41:114][759]LogWorld: Bringing up level for play took: 0.010374
+[2016.10.16-06.34.41:115][759]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.16-06.34.41:115][759]PIE: Información Tiempo de inicio de la reproducción en el editor para  /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.353
+[2016.10.16-06.34.41:115][759]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.35.03:424][ 82]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.35.03:468][ 82]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.37.05:486][741]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.37.05:487][741]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.16-06.37.05:487][741]PIE: New page: Sesión PIE (reproducción en el editor): FirstPersonExampleMap (16/10/2016 09:37:05)
+[2016.10.16-06.37.05:487][741]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2016.10.16-06.37.05:555][741]LogPlayLevel: PIE: StaticDuplicateObject took: (0.068063s)
+[2016.10.16-06.37.05:557][741]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.10.16-06.37.05:557][741]LogPlayLevel: PIE: World Init took: (0.001599s)
+[2016.10.16-06.37.05:557][741]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.070205s)
+[2016.10.16-06.37.05:622][741]LogInit: XAudio2 using 'Altavoces / Auriculares (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.16-06.37.05:642][741]LogInit: FAudioDevice initialized.
+[2016.10.16-06.37.05:677][741]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2016.10.16-06.37.05:684][741]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 60) at 2016.10.16-08.37.05
+[2016.10.16-06.37.05:685][741]LogWorld: Bringing up level for play took: 0.007648
+[2016.10.16-06.37.05:686][741]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.16-06.37.05:686][741]PIE: Información Tiempo de inicio de la reproducción en el editor para  /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.924
+[2016.10.16-06.37.05:687][741]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.37.15:040][295]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.37.15:084][295]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-06.58.55:231][669]LogDesktopPlatform:Warning: Error reading results of folder dialog.
+[2016.10.16-06.58.55:307][671]LogHttp:Warning: Timeout processing Http request. 00000138E2858B80
+[2016.10.16-06.58.59:311][738]LogDesktopPlatform:Warning: Error reading results of folder dialog.
+[2016.10.16-06.59.41:444][710]LogActorComponent: UnregisterComponent: (/Engine/Transient.ProjectileMovementComponent_40__A6522401) Not registered. Aborting.
+[2016.10.16-06.59.41:444][710]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.10.16-06.59.42:002][710]LogSavePackage: Save=373.33ms
+[2016.10.16-06.59.42:002][710]LogSavePackage: Moving '../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/Saved/FirstPersonExampleMap_Auto391E5B5A54324379824FAD2BB34B8078B.tmp' to '../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/Saved/Autosaves/Game/FirstPersonBP/Maps/FirstPersonExampleMap_Auto3.umap'
+[2016.10.16-06.59.42:008][710]LogSavePackage: Total save time: 410.49ms
+[2016.10.16-06.59.42:008][710]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/Saved/Autosaves/Game/FirstPersonBP/Maps/FirstPersonExampleMap_Auto3.umap
+[2016.10.16-06.59.42:011][710]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/FirstPersonExampleMap' took 0.567
+[2016.10.16-06.59.42:011][710]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.567
+[2016.10.16-07.23.56:130][ 73]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-07.23.56:130][ 73]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.16-07.23.56:130][ 73]PIE: New page: Sesión PIE (reproducción en el editor): FirstPersonExampleMap (16/10/2016 10:23:56)
+[2016.10.16-07.23.56:131][ 73]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2016.10.16-07.23.56:246][ 73]LogPlayLevel: PIE: StaticDuplicateObject took: (0.115101s)
+[2016.10.16-07.23.56:250][ 73]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.10.16-07.23.56:251][ 73]LogPlayLevel: PIE: World Init took: (0.004780s)
+[2016.10.16-07.23.56:251][ 73]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.120628s)
+[2016.10.16-07.23.56:295][ 73]LogInit: XAudio2 using 'Altavoces / Auriculares (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.16-07.23.56:315][ 73]LogInit: FAudioDevice initialized.
+[2016.10.16-07.23.56:351][ 73]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2016.10.16-07.23.56:363][ 73]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 60) at 2016.10.16-09.23.56
+[2016.10.16-07.23.56:364][ 73]LogWorld: Bringing up level for play took: 0.011306
+[2016.10.16-07.23.56:366][ 73]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.16-07.23.56:367][ 73]PIE: Información Tiempo de inicio de la reproducción en el editor para  /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap -0.396
+[2016.10.16-07.23.56:367][ 73]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-07.24.56:030][637]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-07.24.56:080][637]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-07.28.47:510][965]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-07.28.47:511][965]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.16-07.28.47:511][965]PIE: New page: Sesión PIE (reproducción en el editor): FirstPersonExampleMap (16/10/2016 10:28:47)
+[2016.10.16-07.28.47:511][965]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2016.10.16-07.28.47:573][965]LogPlayLevel: PIE: StaticDuplicateObject took: (0.061707s)
+[2016.10.16-07.28.47:574][965]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.10.16-07.28.47:575][965]LogPlayLevel: PIE: World Init took: (0.001608s)
+[2016.10.16-07.28.47:575][965]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.063826s)
+[2016.10.16-07.28.47:575][965]LogActorComponent: UnregisterComponent: (/Engine/Transient.ProjectileMovementComponent_40__A6522401) Not registered. Aborting.
+[2016.10.16-07.28.47:575][965]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.10.16-07.28.47:655][965]LogInit: XAudio2 using 'Altavoces / Auriculares (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.16-07.28.47:678][965]LogInit: FAudioDevice initialized.
+[2016.10.16-07.28.47:717][965]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2016.10.16-07.28.47:729][965]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 60) at 2016.10.16-09.28.47
+[2016.10.16-07.28.47:731][965]LogWorld: Bringing up level for play took: 0.012613
+[2016.10.16-07.28.47:732][965]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.16-07.28.47:733][965]PIE: Información Tiempo de inicio de la reproducción en el editor para  /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.97
+[2016.10.16-07.28.47:733][965]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-07.29.46:089][454]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-07.29.46:132][454]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-07.32.40:461][539]LogActorComponent: UnregisterComponent: (/Engine/Transient.ProjectileMovementComponent_40__A6522401) Not registered. Aborting.
+[2016.10.16-07.32.40:461][539]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.10.16-07.32.53:314][539]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_FirstPersonProjectile_C_0' or package '/Engine/Transient'.
+[2016.10.16-07.32.53:314][539]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_FirstPersonProjectile_C_1' or package '/Engine/Transient'.
+[2016.10.16-07.32.53:314][539]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_SKEL_FirstPersonProjectile_C_69' or package '/Engine/Transient'.
+[2016.10.16-07.32.53:314][539]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_FirstPersonProjectile_C_68' or package '/Engine/Transient'.
+[2016.10.16-07.32.57:186][709]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-07.32.57:187][709]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.16-07.32.57:187][709]PIE: New page: Sesión PIE (reproducción en el editor): FirstPersonExampleMap (16/10/2016 10:32:57)
+[2016.10.16-07.32.57:187][709]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2016.10.16-07.32.57:251][709]LogPlayLevel: PIE: StaticDuplicateObject took: (0.064597s)
+[2016.10.16-07.32.57:252][709]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.10.16-07.32.57:253][709]LogPlayLevel: PIE: World Init took: (0.001060s)
+[2016.10.16-07.32.57:253][709]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.065993s)
+[2016.10.16-07.32.57:253][709]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.10.16-07.32.57:293][709]LogInit: XAudio2 using 'Altavoces / Auriculares (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.16-07.32.57:309][709]LogInit: FAudioDevice initialized.
+[2016.10.16-07.32.57:343][709]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2016.10.16-07.32.57:352][709]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 60) at 2016.10.16-09.32.57
+[2016.10.16-07.32.57:353][709]LogWorld: Bringing up level for play took: 0.009701
+[2016.10.16-07.32.57:354][709]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.16-07.32.57:354][709]PIE: Información Tiempo de inicio de la reproducción en el editor para  /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap 0.592
+[2016.10.16-07.32.57:355][709]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-07.33.43:300][450]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-07.33.43:352][450]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-07.39.18:305][300]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-07.39.18:306][300]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.10.16-07.39.18:306][300]PIE: New page: Sesión PIE (reproducción en el editor): FirstPersonExampleMap (16/10/2016 10:39:18)
+[2016.10.16-07.39.18:306][300]LogPlayLevel: Creating play world package: /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2016.10.16-07.39.18:356][300]LogPlayLevel: PIE: StaticDuplicateObject took: (0.050032s)
+[2016.10.16-07.39.18:357][300]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.10.16-07.39.18:358][300]LogPlayLevel: PIE: World Init took: (0.001779s)
+[2016.10.16-07.39.18:358][300]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.052339s)
+[2016.10.16-07.39.18:358][300]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.10.16-07.39.18:430][300]LogInit: XAudio2 using 'Altavoces / Auriculares (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.16-07.39.18:460][300]LogInit: FAudioDevice initialized.
+[2016.10.16-07.39.18:494][300]LogWorld: Game class is 'FirstPersonGameMode_C'
+[2016.10.16-07.39.18:502][300]LogWorld: Bringing World /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 60) at 2016.10.16-09.39.18
+[2016.10.16-07.39.18:503][300]LogWorld: Bringing up level for play took: 0.008382
+[2016.10.16-07.39.18:504][300]LogSpawn:Warning: SpawnActor failed because no class was specified
+[2016.10.16-07.39.18:504][300]PIE: Información Tiempo de inicio de la reproducción en el editor para  /Game/FirstPersonBP/Maps/UEDPIE_0_FirstPersonExampleMap -0.258
+[2016.10.16-07.39.18:504][300]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-07.40.58:082][259]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-07.40.58:124][259]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2016.10.16-08.56.15:776][615]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.10.16-08.56.16:375][615]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/FirstPersonExampleMap' took 0.600
+[2016.10.16-09.05.21:193][716]LogDesktopPlatform:Warning: Error reading results of folder dialog.
+[2016.10.16-09.06.17:260][365]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.10.16-09.06.17:429][365]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonBP/Maps/FirstPersonExampleMap' took 0.169
+[2016.10.16-09.12.09:921][584]LogActorComponent: UnregisterComponent: (/Engine/Transient.CharMoveComp) Not registered. Aborting.
+[2016.10.16-09.13.35:167][584]LogSavePackage: Save=14103.43ms
+[2016.10.16-09.13.35:168][584]LogSavePackage: Moving '../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/Saved/FirstPersonExampleMap8A8FBAE44B0D2E2023C6F4A70055BE7E.tmp' to '../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
+[2016.10.16-09.13.36:176][584]LogSavePackage: Total save time: 25536.55ms
+[2016.10.16-09.13.36:176][584]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap
+[2016.10.16-09.13.36:499][584]LogFileHelpers: Saving map 'FirstPersonExampleMap' took 83.583
+[2016.10.16-09.13.38:866][584]LogSavePackage: Save=942.21ms

@@ -1,0 +1,135 @@
+﻿Log file open, 10/16/16 11:45:56
+LogInit:Display: Running engine for game: jacobsVR
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1560111364) SRandInit(1560111366).
+LogTaskGraph: Started task graph with 4 named threads and 5 total threads.
+LogStats: Stats thread started at 0.071227
+LogInit: Version: 4.11.1-2934540+++UE4+Release-4.11
+LogInit: API Version: 2927265
+LogInit: Compiled (64-bit): Apr  6 2016 02:14:16
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.11
+LogInit: Command line: 
+LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.11/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.10.16-09.45.56:827][  0]LogInit: Selected Device Profile: [Windows]
+[2016.10.16-09.45.56:827][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.10.16-09.45.56:842][  0]LogInit: Computer: DELL-PC
+[2016.10.16-09.45.56:842][  0]LogInit: User: Dell
+[2016.10.16-09.45.56:842][  0]LogInit: CPU Page size=65536, Cores=2
+[2016.10.16-09.45.56:842][  0]LogInit: High frequency timer resolution =2.338341 MHz
+[2016.10.16-09.45.56:843][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2016.10.16-09.45.56:843][  0]LogMemory: Platform Memory Stats for Windows
+[2016.10.16-09.45.56:843][  0]LogMemory: Process Physical Memory: 312.51 MB used, 312.51 MB peak
+[2016.10.16-09.45.56:843][  0]LogMemory: Process Virtual Memory: 315.45 MB used, 315.45 MB peak
+[2016.10.16-09.45.56:843][  0]LogMemory: Physical Memory: 4017.87 MB used, 8072.96 MB total
+[2016.10.16-09.45.56:843][  0]LogMemory: Virtual Memory: 652.10 MB used, 134217728.00 MB total
+[2016.10.16-09.45.56:877][  0]LogTextLocalizationManager: No specific translations for ('es-MX') exist, so ('es') translations will be used.
+[2016.10.16-09.45.57:196][  0]LogD3D11RHI: D3D11 adapters:
+[2016.10.16-09.45.57:205][  0]LogD3D11RHI:    0. 'Intel(R) HD Graphics Family' (Feature Level 11_0)
+[2016.10.16-09.45.57:205][  0]LogD3D11RHI:       112MB of dedicated video memory, 0MB of dedicated system memory, and 2048MB of shared system memory, 1 output[s]
+[2016.10.16-09.45.57:207][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.10.16-09.45.57:207][  0]LogD3D11RHI:       0MB of dedicated video memory, 0MB of dedicated system memory, and 4036MB of shared system memory, 0 output[s]
+[2016.10.16-09.45.57:207][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.10.16-09.45.57:214][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.10.16-09.45.57:215][  0]LogD3D11RHI:     Adapter Name: Intel(R) HD Graphics Family
+[2016.10.16-09.45.57:215][  0]LogD3D11RHI:   Driver Version: 20.19.15.4463 (internal 20.19.15.4463)
+[2016.10.16-09.45.57:215][  0]LogD3D11RHI:      Driver Date: 5-25-2016
+[2016.10.16-09.45.57:215][  0]LogRHI: Texture pool is 795 MB (70% of 1136 MB)
+[2016.10.16-09.45.57:221][  0]LogD3D11RHI: Async texture creation enabled
+[2016.10.16-09.45.57:229][  0]LogShaderCompilers: Guid format shader working directory is -19 characters bigger than the processId version (../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/Intermediate/Shaders/WorkingDirectory/10056/).
+[2016.10.16-09.45.57:229][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Dell/AppData/Local/Temp/UnrealShaderWorkingDir/DB21F6B64A14906F9D8E30ADF37014BF/'.
+[2016.10.16-09.45.57:229][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.10.16-09.45.58:802][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.10.16-09.45.58:811][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.10.16-09.45.58:820][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.10.16-09.45.58:829][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.10.16-09.45.58:838][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.10.16-09.45.58:846][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.10.16-09.45.58:852][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.10.16-09.45.58:858][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.10.16-09.45.58:864][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.10.16-09.45.58:869][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.10.16-09.45.58:874][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.10.16-09.45.58:885][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.10.16-09.45.58:885][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.10.16-09.45.58:887][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.10.16-09.45.58:907][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.10.16-09.45.58:914][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.10.16-09.45.58:920][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.10.16-09.45.58:926][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.10.16-09.45.58:931][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.10.16-09.45.58:931][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.10.16-09.45.59:065][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.10.16-09.45.59:138][  0]LogDerivedDataCache: Loaded boot cache 0.07s 46MB C:/Users/Dell/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.10.16-09.45.59:139][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Dell/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+[2016.10.16-09.45.59:139][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.10.16-09.45.59:139][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.10.16-09.45.59:139][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.10.16-09.45.59:139][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.10.16-09.45.59:159][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.10.16-09.45.59:172][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Dell/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.10.16-09.45.59:838][  0]LogInit: Selected Device Profile: [Windows]
+[2016.10.16-09.45.59:839][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.10.16-09.45.59:978][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.10.16-09.46.00:165][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.10.16-09.46.00:165][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.10.16-09.46.00:165][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.10.16-09.46.00:540][  0]LogUObjectArray: 27678 objects as part of root set at end of initial load.
+[2016.10.16-09.46.00:540][  0]LogUObjectAllocator: 5591384 out of 0 bytes used by permanent object pool.
+[2016.10.16-09.46.00:541][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.10.16-09.46.00:552][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.10.16-09.46.00:730][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.10.16-09.46.00:730][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.10.16-09.46.00:875][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.10.16-09.46.00:875][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.10.16-09.46.00:876][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.10.16-09.46.00:876][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.10.16-09.46.00:876][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.10.16-09.46.00:876][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.10.16-09.46.01:629][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.10.16-09.46.01:751][  0]LogAssetRegistry: FAssetRegistry took 0.0217 seconds to start up
+[2016.10.16-09.46.02:116][  0]SourceControl: Información El control de código fuente está desactivado
+[2016.10.16-09.46.02:118][  0]SourceControl: Información El control de código fuente está desactivado
+[2016.10.16-09.46.02:133][  0]SourceControl: Información El control de código fuente está desactivado
+[2016.10.16-09.46.02:147][  0]SourceControl: Información El control de código fuente está desactivado
+[2016.10.16-09.46.02:434][  0]LogEngine: Initializing Engine...
+[2016.10.16-09.46.02:435][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.10.16-09.46.02:437][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.10.16-09.46.02:676][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.10.16-09.46.02:683][  0]LogInit: XAudio2 using 'Altavoces / Auriculares (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.10.16-09.46.02:710][  0]LogInit: FAudioDevice initialized.
+[2016.10.16-09.46.02:742][  0]LogDerivedDataCache: Saved boot cache 0.03s 46MB C:/Users/Dell/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.10.16-09.46.02:747][  0]LogInit: Texture streaming: Enabled
+[2016.10.16-09.46.03:331][  0]LogInit: Transaction tracking system initialized
+[2016.10.16-09.46.03:375][  0]BlueprintLog: New page: Cargar el editor
+[2016.10.16-09.46.03:867][  0]LocalizationService: Información Localization service is disabled
+[2016.10.16-09.46.04:708][  0]LogConsoleResponse:Display: 
+[2016.10.16-09.46.05:368][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.10.16-09.46.05:368][  0]LogCook:Display: Mobile HDR setting 0
+[2016.10.16-09.46.05:368][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.10.16-09.46.05:531][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Dell/Documents/Unreal Projects/jacobsVR/Content/' took 0.21s
+[2016.10.16-09.46.05:531][  0]SourceControl: Información El control de código fuente está desactivado
+[2016.10.16-09.46.05:531][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Dell/Documents/Unreal Projects/jacobsVR/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.10.16-09.46.05:747][  0]LightingResults: New page: Diseñar la iluminación
+[2016.10.16-09.46.05:752][  0]MapCheck: New page: Revisión del mapa
+[2016.10.16-09.46.05:752][  0]LightingResults: New page: Diseñar la iluminación
+[2016.10.16-09.46.13:853][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2016.10.16-09.46.14:366][
